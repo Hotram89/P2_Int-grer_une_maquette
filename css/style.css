@@ -1,0 +1,100 @@
+/* Police personnalisée */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('static/Raleway-Medium.ttf');
+}
+
+
+
+body
+{
+    font-family: 'Raleway';
+   
+
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    border: 2px black solid;
+}
+
+#logo
+{
+    display: flex;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 70px;
+    margin: 50px 0 10px 10px;
+}
+
+nav
+{
+    border: black solid 2px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+
+    
+
+}
+
+ul
+{
+    display: flex;
+    justify-content: start;
+    background-color: greenyellow;
+    
+}
+
+li
+{
+    width: 130px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    padding: 0 10px 0 10px;
+    margin-top: 30px;
+    background-color: coral;
+   
+    
+    
+}
+
+li a 
+{
+    text-decoration: none;
+    color: grey;
+}
+li a:hover
+{
+    color:#0065FC;
+    border-top: #0065FC 2px solid;
+}
+/* Section */
+
+/* Regles CSS pour les mobiles */
+@media all and (max-device-width: 768px)
+
+
+
+
+/*Regles CSS pour les tablettes */
+@media screen {
+    
+} all and (max-device-width: 992px)
+
+header
+{
+    
+    color: green;
+}
+
