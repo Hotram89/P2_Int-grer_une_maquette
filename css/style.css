@@ -83,6 +83,119 @@ h1{
     font-weight: bold;
 }
 
+/* le corps de page */
+
+main{
+
+    padding: 20px;
+}
+
+/* le bouton de recherche */
+
+.searchBar {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.searchIcon {
+    height: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 25% 0% 0% 25%;
+}
+
+#searchCity{
+    height: 38px;
+    width: 150px;
+    border: solid #F2F2F2 1px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.searchButton{
+    background-color: #0065FC;
+    color: cornsilk;
+    width: 150px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* les filtres */
+
+.filters{
+    display: flex;
+    font-weight: bold;
+   
+}
+.filters p{
+    margin-right: 20px;
+}
+
+.filters i{
+    background-color:#DEEBFF ;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterButton{
+    margin-right: 20px;
+    padding-right: 10px;
+    border: solid #F2F2F2 3px;
+    border-radius: 25px;
+    border-left: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button" ] {
+    background-color:white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+ 
+}
+
+/* la petite barre d'info */
+
+.info{
+    display: flex;
+    align-items: center;
+    
+}
+.info p{
+    margin-left: 10px;
+}
+
+.infoIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px;
+}
+/* le pied de page */
+
+footer{
+    background-color: #F2F2F2;
+    height: 100px;
+}
 /* Regles CSS pour les mobiles */
 @media all and (max-device-width: 768px)
 

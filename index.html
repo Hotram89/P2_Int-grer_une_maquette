@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+    <main>
         <header>
             <div id="logo"> <img src="../P2_dournel_marion/images/logo/Booki.png" alt="">
             </div>
@@ -21,16 +21,29 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        
         <div id="Search">
             
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div id="barreRecherche">
-                <div><i class="fas fa-map-marker-alt">icon</i></div>
-                <div>formula ire</div>
-                <div>bouton</div>
+            <div class="searchBar">
+                <div class="searchIcon"><i class="fas fa-map-marker-alt"></i></div>
+                <input type="text" id="searchCity" value="Marseille, France" placeholder="Où allez-vous ?" />
+                <div class="searchButton">Rechercher</div>
             </div>
+
+            <div class="filters">
+                <p>Filtres</p>
+                <div class="filterButton" ><i class="fas fa-money-bill-wave" style="color:#0065FC"></i><input class="economy" type="button" value="Économique"></div>
+                <div class="filterButton"><i class="fas fa-child" style="color:#0065FC"></i><input class="family" type="button" value="Familial"> </div>
+                <div class="filterButton"><i class="fas fa-heart" style="color:#0065FC"></i><input class="love" type="button" value="Romantique"></div>
+                <div class="filterButton"><i class="fas fa-dog" style="color:#0065FC"></i><input class="pets" type="button" value="Animaux autorisés"></div>
+            </div>
+            <div class="info">
+                <div class="infoIcon"><i class="fas fa-info fa-sm" style="color:#0065FC"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div>
             
         
         </main>
