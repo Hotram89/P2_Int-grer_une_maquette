@@ -2,11 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;0,900;1,300&display=swap');
 
-
+* {
+    box-sizing: border-box;
+}
 
 body
 {
     font-family: 'Raleway';
+    width: 1400px;
+    margin: auto;
 
 }
 
@@ -32,12 +36,9 @@ header
 
 nav
 {
-    border: black solid 2px;
     width: 50%;
     display: flex;
-    justify-content: end;
-
-    
+    justify-content: end; 
 
 }
 
@@ -57,9 +58,7 @@ li
     list-style: none;
     display: flex;
     justify-content: start;
-    margin: 10px;
-   
-    
+    margin: 10px;  
     
 }
 
@@ -119,7 +118,7 @@ main{
 .searchButton{
     background-color: #0065FC;
     color: cornsilk;
-    width: 150px;
+    width: 130px;
     height: 40px;
     border-radius: 0 10px 10px 0;
     display: flex;
@@ -144,6 +143,7 @@ main{
     height: 40px;
     width: 40px;
     border-radius: 25px;
+    border: solid 3px #DEEBFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,13 +196,11 @@ footer{
     background-color: #F2F2F2;
     height: 100px;
 }
-/* Regles CSS pour les mobiles */
+/* Regles CSS pour les mobiles 
 @media all and (max-device-width: 768px)
 
 
-
-
-/*Regles CSS pour les tablettes */
+ 
 @media screen and (min-width {
     
 } all and (max-device-width: 992px)
@@ -212,4 +210,4 @@ header
     
     color: green;
 }
-
+*/
