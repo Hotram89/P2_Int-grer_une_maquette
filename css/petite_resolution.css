@@ -5,12 +5,12 @@ body{
     width: 400px;
 }
 
-nav{
+header nav{
     width: 100%;
     
 }
 
-ul{
+header ul{
     justify-content: center;
     width: 100%;
     padding-inline-start:none;
@@ -20,29 +20,33 @@ ul{
     padding-inline-start: 0px;
  }
 
-li{
+header li{
     width: 200px;
     padding: 0px;
     margin: 0px;
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid #F2F2F2
 }
 
-
-li a 
+header li:hover
 {
-    color: rgb(54, 53, 53);
-    border-bottom: 2px solid #F2F2F2 ;
+    border-top: none;
+    border-bottom: 2px solid #0065FC
+}
+header li a 
+{
     padding-bottom: 10px;
     padding-top: 20px;
     
 }
 
-li a:hover{
+#logo{
+    justify-content: center;
+}
 
-    border-top: none;
-    border-bottom: 2px solid #0065FC ;
-    
+#logo img{
+    margin-left: 30px;
 }
 header{
     
