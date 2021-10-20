@@ -74,6 +74,115 @@ header a:hover{
 header li:hover{
     border-top: #0065FC solid 2px ;
 }
+/********************************************************/
+/**************** le bouton de recherche ****************/
+/********************************************************/
+
+.searchBar {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.searchIcon {
+    height: 40px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 25% 0% 0% 25%;
+}
+
+#searchCity{
+    height: 38px;
+    width: 150px;
+    border: solid #F2F2F2 1px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.searchButton{
+    background-color: #0065FC;
+    color: cornsilk;
+    width: 130px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*****************************************************/
+/**************** les filtres ************************/
+/*****************************************************/
+
+.filters{
+    display: flex;
+    font-weight: bold;
+   
+}
+.filters p{
+    margin-right: 20px;
+}
+
+.filters i{
+    background-color:#DEEBFF ;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    border: solid 3px #DEEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterButton{
+    margin-right: 20px;
+    padding-right: 10px;
+    border: solid #F2F2F2 3px;
+    border-radius: 25px;
+    border-left: none;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition-duration: 0.4s;
+}
+.filterButton:hover{
+    transform: scale(1.15);
+}
+input[type="button" ] {
+    background-color:white;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+ 
+}
+/**************************/
+/* la petite barre d'info */
+/***************************/
+
+.info{
+    display: flex;
+    align-items: center;
+    
+}
+.info p{
+    margin-left: 10px;
+}
+
+.infoIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: solid #F2F2F2 2px;
+    border-radius: 25px;
+}
 /****************************************************************/
 /************************* Section ******************************/
 /****************************************************************/
@@ -91,13 +200,15 @@ h2{
     display: flex;
     width: 100%;
     margin-top: 20px;
+    gap: 25px;
 }
-section {
+.number section {
     background-color:#F2F2F2 ;
     padding: 20px;
     margin: 0 5px;
     border-radius: 20px;
     min-height: 700px;
+    
 }
  .primary{
      flex: 2;
@@ -164,7 +275,9 @@ section span{
 /***************************************************************************/
 /******************SECTION LES PLUS POPULAIRES******************************/
 /***************************************************************************/
-
+.pop{
+    max-width: 400px;
+}
 .pop_title{
     display: flex;
     justify-content: space-between;
@@ -174,7 +287,9 @@ section span{
     color: #000;
     font-size: 30px;
 }
-
+.pop h1{
+    margin-left: 30px;
+}
 .pop article{
     height: 150px;
     width: 350px;
@@ -219,10 +334,10 @@ section span{
 }
 .whiteBoard h2{
     height: 50px;
-    background-color: white;
-    padding: 20px;
+    padding-top: 15px;
     margin-top: 0px;
-    border-radius: 0 0 25px 25px;
+    margin-bottom: 5px;
+    
 }
 .activity{
     display: flex;
@@ -320,111 +435,7 @@ main{
     padding: 20px;
 }
 
-/* le bouton de recherche */
 
-.searchBar {
-    display: flex;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.searchIcon {
-    height: 40px;
-    background-color: #F2F2F2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    border-radius: 25% 0% 0% 25%;
-}
-
-#searchCity{
-    height: 38px;
-    width: 150px;
-    border: solid #F2F2F2 1px;
-    padding-left: 15px;
-    font-weight: bold;
-}
-
-.searchButton{
-    background-color: #0065FC;
-    color: cornsilk;
-    width: 130px;
-    height: 40px;
-    border-radius: 0 10px 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-/* les filtres */
-
-.filters{
-    display: flex;
-    font-weight: bold;
-   
-}
-.filters p{
-    margin-right: 20px;
-}
-
-.filters i{
-    background-color:#DEEBFF ;
-    height: 40px;
-    width: 40px;
-    border-radius: 25px;
-    border: solid 3px #DEEBFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.filterButton{
-    margin-right: 20px;
-    padding-right: 10px;
-    border: solid #F2F2F2 3px;
-    border-radius: 25px;
-    border-left: none;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1);
-    transition-duration: 0.4s;
-}
-.filterButton:hover{
-    transform: scale(1.15);
-}
-input[type="button" ] {
-    background-color:white;
-    border: none;
-    font-weight: bold;
-    font-size: 18px;
-    margin-right: 10px;
-    margin-left: 10px;
- 
-}
-
-/* la petite barre d'info */
-
-.info{
-    display: flex;
-    align-items: center;
-    
-}
-.info p{
-    margin-left: 10px;
-}
-
-.infoIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20px;
-    width: 20px;
-    border: solid #F2F2F2 2px;
-    border-radius: 25px;
-}
 /****************************************************************/
 /********************* le pied de page **************************/
 /****************************************************************/
@@ -453,6 +464,7 @@ footer li{
 }
 footer h2{
     margin-bottom: 10px;
+    margin-left: 0px;
 }
 /* Regles CSS pour les mobiles 
 @media all and (max-device-width: 768px)
