@@ -37,7 +37,6 @@ header{
 }
 #logo img{
     width: 50%;
-    height: 50%;
     display: flex;
     align-items: flex-end;
 
@@ -52,6 +51,7 @@ header ul
     justify-content: flex-end;
     list-style: none;
     align-items: center; 
+    margin-top: 0px;
 }
 
 header li{
@@ -78,7 +78,7 @@ header li:hover{
 /**************** le bouton de recherche ****************/
 /********************************************************/
 
-.searchBar {
+.searchLocation {
     display: flex;
     font-weight: bold;
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ header li:hover{
 }
 
 #searchCity{
-    height: 38px;
+    height: 40px;
     width: 150px;
     border: solid #F2F2F2 1px;
     padding-left: 15px;
@@ -120,6 +120,7 @@ header li:hover{
 .filters{
     display: flex;
     font-weight: bold;
+    padding-left: 0px;
    
 }
 .filters p{
@@ -128,6 +129,7 @@ header li:hover{
 
 .filters i{
     background-color:#DEEBFF ;
+    color: #0065FC;
     height: 40px;
     width: 40px;
     border-radius: 25px;
@@ -136,7 +138,8 @@ header li:hover{
     align-items: center;
     justify-content: center;
 }
-.filterButton{
+
+.filters li{
     margin-right: 20px;
     padding-right: 10px;
     border: solid #F2F2F2 3px;
@@ -149,13 +152,14 @@ header li:hover{
     transform: scale(1);
     transition-duration: 0.4s;
 }
-.filterButton:hover{
+.filters li:hover{
     transform: scale(1.15);
 }
 input[type="button" ] {
     background-color:white;
     border: none;
     font-weight: bold;
+    font-family: 'Raleway';
     font-size: 18px;
     margin-right: 10px;
     margin-left: 10px;
@@ -210,7 +214,7 @@ h2{
     min-height: 700px;
     
 }
- .primary{
+ .accomodation{
      flex: 2;
  }
  .pop{
@@ -228,13 +232,13 @@ article{
 /***********************les articles****************************************/
 /***************************************************************************/
 
-.primary div{
+.accomodation div{
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
   
 }
-.primary article{
+.accomodation article{
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -245,20 +249,20 @@ article{
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);;
 }
 
-.primary article:hover{
+.accomodation article:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.primary h1,h2{
-    margin: 15px;
-}
-.primary figure{
+
+.accomodation figure{
     margin-top: 0px;
 }
-
-figure img{
+.accomodation figcaption{
+    margin-left: 15px;
+}
+.accomodation figure img{
     width: 250px;
     height: 120px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
     margin: 0px;
     object-fit: cover;
     padding: 5px;
@@ -268,9 +272,10 @@ figure img{
 section i{
     color: #0065FC;
 }
-section span{
+.empty-star {
     color: #F2F2F2;
 }
+
 
 /***************************************************************************/
 /******************SECTION LES PLUS POPULAIRES******************************/
@@ -278,12 +283,12 @@ section span{
 .pop{
     max-width: 400px;
 }
-.pop_title{
+.popTitle{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pop_title i{
+.popTitle i{
     color: #000;
     font-size: 30px;
 }
@@ -304,20 +309,35 @@ section span{
 .pop article:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.pop article div{
+.pop p{
+    margin-top: 5px;
+    flex: 1;
+}
+.pop span{
+    margin-bottom: 10px;
+}
+.pop figcaption{
     margin: 0 5px 0 15px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.cardsDetails p{
+    flex: 1;
+}
+.pop article p{
+    flex: 1;
 }
 
 .pop img{
     width: 150px;
     height: 150px;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     margin: 0px;
     object-fit: cover;
-    padding: 5px;
-
-    
+    padding: 5px;  
 }
+
 /***************************************************************************/
 /******************SECTION Activités****************************************/
 /***************************************************************************/
@@ -335,6 +355,7 @@ section span{
 .whiteBoard h2{
     height: 50px;
     padding-top: 15px;
+    margin-left: 15px;
     margin-top: 0px;
     margin-bottom: 5px;
     
@@ -344,7 +365,9 @@ section span{
     max-width: 1600px;
     justify-content: space-between;
 }
-
+.activity figure{
+    margin: 0px;
+}
 
 
 /*********************************************************/
@@ -444,7 +467,7 @@ footer{
     background-color: #F2F2F2;
    
 }
-footer div{
+footer nav{
     max-width: 1400px;
     display: flex;
     margin: auto;
@@ -456,6 +479,7 @@ footer ul{
     text-decoration: none;
     margin: 15px;
     list-style: none;
+    padding-left: 0px;
 }
 
 footer li{
