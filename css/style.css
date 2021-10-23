@@ -119,9 +119,10 @@ header li:hover{
 
 .filters{
     display: flex;
+    align-items: center;
     font-weight: bold;
     padding-left: 0px;
-   
+    margin-top: 0px;
 }
 .filters p{
     margin-right: 20px;
@@ -130,8 +131,8 @@ header li:hover{
 .filters i{
     background-color:#DEEBFF ;
     color: #0065FC;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 25px;
     border: solid 3px #DEEBFF;
     display: flex;
@@ -140,12 +141,13 @@ header li:hover{
 }
 
 .filters li{
-    margin-right: 20px;
+    margin-right: 10px;
     padding-right: 10px;
+    margin-bottom: 5px;
     border: solid #F2F2F2 3px;
     border-radius: 25px;
     border-left: none;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +209,6 @@ h2{
     gap: 25px;
 }
 .number section {
-    background-color:#F2F2F2 ;
     padding: 20px;
     margin: 0 5px;
     border-radius: 20px;
@@ -216,6 +217,7 @@ h2{
 }
  .accomodation{
      flex: 2;
+     background-color:#F2F2F2 ;
  }
  .pop{
      flex: 1;
@@ -282,6 +284,7 @@ section i{
 /***************************************************************************/
 .pop{
     max-width: 400px;
+    background-color:#F2F2F2 ;
 }
 .popTitle{
     display: flex;
