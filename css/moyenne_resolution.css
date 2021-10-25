@@ -1,0 +1,28 @@
+
+.number{
+    flex-direction: column;
+}
+.number section{
+    min-height: unset;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pop article{
+    width: 250px;
+}
+.pop{
+    max-width: 990px;
+}
+.pop img{
+    width: 105px;
+}
+.activity{
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.activity div{
+    margin-bottom: 15px;
+}

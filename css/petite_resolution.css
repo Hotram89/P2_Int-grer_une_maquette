@@ -50,6 +50,18 @@ header{
     justify-content: center;
     align-items: center;
 }
+.searchButton{
+    display: none;
+}
+.searchLocation{
+    scale: 1.5;
+    margin-top: 15px;
+}
+.searchLocation span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /**********************************************/
 /*******************SECTION********************/
 /**********************************************/
@@ -77,6 +89,7 @@ main section{
     border-radius: 0px;
     padding: 0px;
     margin: 0px;
+    max-height: 3000px;
 }
 .pop{
     padding: 0px;
@@ -98,6 +111,8 @@ main section{
     padding: 0px;
     margin: 0px;
     background-color: transparent;
+    overflow: unset;
+    height: 1000px;
 }
 .accomodation div{
     justify-content: center;
@@ -116,15 +131,10 @@ main section{
 .accomodation p{
     margin: 0px;
 }
-/******************************************************/
-/**************section Activites********************/
-/******************************************************/
-.whiteBoard{
-    align-items: center;
-}
-.activity{
+.container{
     flex-direction: column;
 }
+
 .activity a{
     height: 200px;
 }
@@ -135,6 +145,7 @@ main section{
 .simpleCard{
     height: 200px;
     margin-bottom: 20px;
+    
 }
 
 .card-image{
@@ -151,7 +162,7 @@ main section{
 }
 
 .doubleCard{
-   
+   flex-direction: column;
     width: 350px;
 }
 .doubleCard a{
@@ -183,6 +194,16 @@ main section{
     width: 100%;
     height: 100%;
    
+}
+/******************************************************/
+/**************section Activites********************/
+/******************************************************/
+.whiteBoard{
+    align-items: center;
+}
+.activity{
+    flex-direction: column;
+    max-height: 2000px;
 }
 
 .filters{

@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="images/logo/Booki@3x.png" />
     <script src="https://kit.fontawesome.com/48c9fff134.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/moyenne_resolution.css"/>
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/petite_resolution.css" />
     <title> Booki - site de réservation d'hebergement et activites </title>
 
@@ -18,8 +19,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <li><a href="#hotels">Hébergements</a></li>
+                <li><a href="#tourism">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -31,9 +32,9 @@
             <p>En plein centre ville ou en pleine nature</p>
         </section>
         <section class="searchLocation">
-                <div class="searchIcon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="cityIcon"><i class="fas fa-map-marker-alt"></i></div>
                 <input type="text" id="searchCity" value="Marseille, France" placeholder="Où allez-vous ?" />
-                <a href="#"><div class="searchButton">Rechercher</div></a>
+                <a href="#"><div class="searchButton">Rechercher</div><span class="fas fa-search"></span></a>
         </section>
         <nav class="filters">
                 <p>Filtres</p>
@@ -52,7 +53,7 @@
     <!-------------Section Hebergements--------------->
          <div class="number">
          <section class="accomodation">
-             <h1>Hébergements à Marseille</h1>
+             <h1 id="hotels">Hébergements à Marseille</h1>
              <div> 
                 <a href="#">
                     <article>
@@ -174,7 +175,7 @@
                  <h1>Les plus populaires</h1>
                  <i class="fas fa-chart-line"></i>
                 </div>
-             <div>
+             <div class="container">
                  <a href="#">
                      <article>
                          <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre_verte"/>
@@ -231,7 +232,7 @@
 
     <!-----------Section Activites----------------------->
             <section class="whiteBoard">
-                <h1>Activités à Marseille</h1>
+                <h1 id="tourism">Activités à Marseille</h1>
                 <section class="activity">
                 <div class="simpleCard">
                     <a href="#">
