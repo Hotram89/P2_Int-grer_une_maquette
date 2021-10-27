@@ -41,6 +41,7 @@ h1 {
 
 h2 {
 	font-size: 90%;
+    font-weight: bold;
 	margin-bottom: 0px;
 }
 
@@ -267,7 +268,9 @@ input[type="button"]:hover {
 	gap: 25px;
 }
 
-
+section h1{
+    margin: 30px 0;
+}
 /***************************************************************************/
 
 
@@ -316,7 +319,7 @@ figure span i{
 	max-width: 900px;
 	margin: auto;
 	align-items: center;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 
 .accomodation article {
