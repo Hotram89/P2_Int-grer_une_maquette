@@ -31,7 +31,6 @@ article {
 }
 figure {
   border-radius: 20px;
-  margin: auto;
 }
 
 h1 {
@@ -63,8 +62,10 @@ header {
   margin: auto;
 }
 
-#logo img {
-  width: 50%;
+#logo {
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
 }
 
 header nav {
@@ -82,7 +83,7 @@ header ul {
 
 header li {
   width: 200px;
-  border-top: transparent solid 2px;
+  border-top: transparent solid 3px;
   padding-top: 30px;
   text-align: center;
 }
@@ -92,7 +93,7 @@ header a:hover {
 }
 
 header li:hover {
-  border-top: #0065fc solid 2px;
+  border-top: #0065fc solid 3px;
 }
 
 /********************************************************/
@@ -101,27 +102,30 @@ header li:hover {
 
 /********************************************************/
 .baseLine {
-  margin: 20px 0;
+ 
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 .searchLocation i {
   color: black;
 }
 
 .cityIcon {
-  height: 40px;
+  height: 50px;
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 50px;
   border-radius: 25% 0% 0% 25%;
 }
 
 .searchButton {
   background-color: #0065fc;
   color: cornsilk;
-  width: 130px;
-  height: 40px;
+  min-width: 130px;
+  height: 50px;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
@@ -129,17 +133,18 @@ header li:hover {
 }
 
 #searchCity {
-  height: 40px;
-  width: 150px;
+  height: 50px;
   border: solid #f2f2f2 1px;
   padding-left: 15px;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .searchLocation {
   display: flex;
   font-weight: bold;
   margin: 20px 0;
+  
 }
 
 /********************************************************/
@@ -308,7 +313,9 @@ figure span i {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
+.accomodation article:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .accomodation figure img {
   width: 240px;
   height: 120px;
@@ -338,17 +345,23 @@ figure span i {
 /******************SECTION LES PLUS POPULAIRES******************************/
 
 /***************************************************************************/
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
 
-.pop {
+}
+.popular {
   flex: 1;
   background-color: #f2f2f2;
   border-radius: 20px;
 }
-
-.pop figure {
+.popular a {
   height: 150px;
   width: 350px;
-  margin-bottom: 15px;
+  margin: 0px;
   border-radius: 20px;
   display: flex;
   overflow: hidden;
@@ -357,9 +370,16 @@ figure span i {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-color: white;
 }
+.popular a:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.popular figure {
+  margin: 0px;
+  display: flex;
+}
 
-.pop img {
-  width: 150px;
+.popular img {
+  width: 140px;
   margin: 0px;
   height: 150px;
   border-radius: 20px 0 0 20px;
@@ -367,21 +387,21 @@ figure span i {
   object-fit: cover;
 }
 
-.pop figcaption {
+.popular figcaption {
   margin: 0 5px 0 5px;
   display: flex;
   flex-direction: column;
 }
 
-.pop p {
+.popular p {
   flex: 1;
 }
 
-.pop span {
+.popular span {
   margin-bottom: 15px;
 }
 
-.popTitle {
+.popularTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -389,11 +409,12 @@ figure span i {
   margin-left: 15px;
 }
 
-.popTitle i {
+.popularTitle i {
   font-size: 30px;
+ 
 }
 
-.pop h1 {
+.popular h1 {
   margin-left: 30px;
 }
 
@@ -469,49 +490,54 @@ figure span i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 25px;
   background-color: transparent;
 }
 
 .doubleCard a {
-  box-shadow: 0px 0px 10px #d8d7d7;
+  
   border-radius: 25px;
 }
 
-.doubleCard a:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
 
-.image2 {
+.largeCard {
   height: 250px;
   width: 300px;
+  box-shadow: 0px 0px 10px #d8d7d7;
 }
-
-.image2 img {
+.largeCard:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.largeCard img {
   object-fit: cover;
   width: 100%;
   height: 200px;
   border-radius: 25px 25px 0 0;
 }
 
-.image3 {
+.smallCard {
   height: 150px;
   width: 300px;
+  box-shadow: 0px 0px 10px #d8d7d7;
 }
-
-.image3 img {
+.smallCard:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.smallCard img {
   object-fit: cover;
   width: 100%;
   height: 100px;
   border-radius: 25px 25px 0 0;
 }
 
-.image4 {
+.mediumCard {
   height: 200px;
   width: 300px;
+  box-shadow: 0px 0px 10px #d8d7d7;
 }
-
-.image4 img {
+.mediumCard:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.mediumCard img {
   object-fit: cover;
   width: 100%;
   height: 150px;
@@ -556,266 +582,5 @@ footer h2 {
   margin-left: 0px;
 }
 
-/*************************************************************************************************/
 
-/* Regles CSS pour les tablettes *****/
 
-/*************************************************************************************************/
-
-@media screen and (max-width: 992px) {
-  main {
-    max-width: 750px;
-    margin: auto;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /**********************************************/
-  /*********************HEADER*******************/
-  /**********************************************/
-  header nav {
-    width: 100%;
-  }
-  header ul {
-    justify-content: center;
-    width: 100%;
-    padding-inline-start: none;
-    margin: none;
-    margin-block-start: 0%;
-    margin-block-end: 0%;
-    padding-inline-start: 0px;
-  }
-  header li {
-    width: 200px;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid #f2f2f2;
-  }
-  header li:hover {
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid #0065fc;
-  }
-  header li a {
-    padding-bottom: 10px;
-    padding-top: 20px;
-  }
-  #logo {
-    justify-content: center;
-  }
-  #logo img {
-    margin-left: 100px;
-  }
-  header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .filters {
-    flex-wrap: wrap;
-  }
-  .number {
-    flex-direction: column-reverse;
-  }
-  .number section {
-    min-height: unset;
-  }
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .pop figure {
-    width: 250px;
-  }
-  .pop {
-    max-width: 990px;
-    border-radius: 0px;
-  }
-  .pop img {
-    width: 105px;
-  }
-  .activity {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .activity div {
-    margin-bottom: 15px;
-  }
-  footer nav {
-    max-width: 750px;
-  }
-}
-
-/*************************************************************************************************/
-
-/* Regles CSS pour les mobiles *****/
-
-/*************************************************************************************************/
-
-@media screen and (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-  }
-  /**********************************************/
-  /*******************Filtres********************/
-  /**********************************************/
-  .searchButton {
-    display: none;
-  }
-  .searchLocation {
-    scale: 1.5;
-    margin-top: 15px;
-  }
-  .searchLocation span {
-    display: flex;
-    background-color: #0065fc;
-    color: cornsilk;
-    border-radius: 10px;
-    width: 50px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-  }
-  /**********************************************/
-  /*******************SECTION********************/
-  /**********************************************/
-  main {
-    width: 400px;
-    margin: auto;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .info {
-    max-width: 350px;
-  }
-  .number section {
-    border-radius: 0px;
-    margin: 0px;
-    max-height: 3000px;
-  }
-  .pop {
-    width: 400px;
-    border-radius: 0px;
-  }
-  .pop figure {
-    width: 350px;
-  }
-  .popTitle {
-    margin: 10px 25px;
-  }
-  .popTitle h1 {
-    margin-left: 0px;
-  }
-  .pop img {
-    width: 150px;
-  }
-  /******************************************************/
-  /**************section hebergements********************/
-  /******************************************************/
-  .accomodation {
-    padding: 0px;
-    margin: 0px;
-    background-color: transparent;
-    overflow: unset;
-    height: 1000px;
-  }
-  .accomodation section {
-    justify-content: center;
-  }
-  .accomodation article {
-    width: 350px;
-    height: 200px;
-  }
-  .accomodation figure {
-    width: 100%;
-    height: 100%;
-  }
-  .accomodation figure img {
-    width: 100%;
-  }
-  .accomodation p {
-    margin: 0px;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .activity a {
-    height: 200px;
-  }
-  .activity img {
-    height: 200px;
-  }
-  .simpleCard {
-    height: 200px;
-    width: 350px;
-    margin-bottom: 20px;
-  }
-  .card-image {
-    height: 150px;
-    width: 350px;
-  }
-  .simpleCard img {
-    width: 100%;
-    height: 100%;
-  }
-  .simpleCard figure {
-    margin-bottom: 10px;
-  }
-  .doubleCard {
-    flex-direction: column;
-    width: 350px;
-  }
-  .doubleCard a {
-    margin-bottom: 20px;
-  }
-  .image2 {
-    height: 150px;
-    width: 350px;
-  }
-  .image2 img {
-    width: 100%;
-    height: 100%;
-  }
-  .image3 {
-    height: 150px;
-    width: 350px;
-  }
-  .image3 img {
-    width: 100%;
-    height: 100%;
-  }
-  .image4 {
-    height: 150px;
-    width: 350px;
-  }
-  .image4 img {
-    width: 100%;
-    height: 100%;
-  }
-  /******************************************************/
-  /**************section Activites********************/
-  /******************************************************/
-  .whiteBoard {
-    align-items: center;
-  }
-  .activity {
-    flex-direction: column;
-    max-height: 2000px;
-  }
-  .filters li {
-    padding-right: 0px;
-  }
-  footer nav {
-    flex-direction: column;
-    gap: 0px;
-  }
-}
