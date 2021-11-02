@@ -9,11 +9,20 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/moyenne_resolution.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/petite_resolution.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 992px)"
+      href="css/moyenne_resolution.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/petite_resolution.css"
+    />
     <title>Booki - site de réservation d'hebergement et activites</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <img id="logo" src="images/logo/Booki.png" alt="logo" />
       <nav>
@@ -25,55 +34,52 @@
     </header>
     <!-- Contenu principal de la page -->
     <main>
-      
-        
-      
-      
-      <!-- Filtres -->
+      <!-- Bouton Recherche par ville -->
       <section class="baseLine">
-      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-      <address class="searchLocation">
-        <i class="cityIcon fas fa-map-marker-alt"></i>
-        <input
-          type="text"
-          id="searchCity"
-          value="Marseille, France"
-          placeholder="Où allez-vous ?"
-        />
-        <a href="#">
-          <div class="searchButton">Rechercher</div>
-          <span class="fas fa-search"></span>
-        </a>
-      </address>
-      <nav class="filters">
-        <p>Filtres</p>
-        <ul class="filters">
-          <li>
-            <i class="fas fa-money-bill-wave"></i
-            ><input class="economy" type="button" value="Économique" />
-          </li>
-          <li>
-            <i class="fas fa-child"></i
-            ><input class="family" type="button" value="Familial" />
-          </li>
-          <li>
-            <i class="fas fa-heart"></i
-            ><input class="love" type="button" value="Romantique" />
-          </li>
-          <li>
-            <i class="fas fa-dog"></i
-            ><input class="pets" type="button" value="Animaux autorisés" />
-          </li>
-        </ul>
-      </nav>
-      <div class="info">
-        <i class="infoIcon fas fa-info fa-sm"></i>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
+        <address class="searchLocation">
+          <i class="cityIcon fas fa-map-marker-alt"></i>
+          <input
+            type="text"
+            id="searchCity"
+            value="Marseille, France"
+            placeholder="Où allez-vous ?"
+          />
+          <a href="#">
+            <div class="searchButton">Rechercher</div>
+            <span class="fas fa-search"></span>
+          </a>
+        </address>
+        <!-- Filtres -->
+        <nav class="filters">
+          <p>Filtres</p>
+          <ul class="filters">
+            <li>
+              <i class="fas fa-money-bill-wave"></i
+              ><input class="economy" type="button" value="Économique" />
+            </li>
+            <li>
+              <i class="fas fa-child"></i
+              ><input class="family" type="button" value="Familial" />
+            </li>
+            <li>
+              <i class="fas fa-heart"></i
+              ><input class="love" type="button" value="Romantique" />
+            </li>
+            <li>
+              <i class="fas fa-dog"></i
+              ><input class="pets" type="button" value="Animaux autorisés" />
+            </li>
+          </ul>
+        </nav>
+        <!-- Section infos -->
+        <div class="info">
+          <i class="infoIcon fas fa-info fa-sm"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </section>
-      <!-- Section infos -->
-      
+
       <!-- Section Hebergements -->
       <div class="number">
         <section class="accomodation">
@@ -317,17 +323,17 @@
       <section class="whiteBoard">
         <h1 id="tourism">Activités à Marseille</h1>
         <section class="activity">
-          
-            <a class="simpleCard" href="#">
-              <figure class="card-image">
-                <img
-                  src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="port_marseille"
-                />
-                <h2>Vieux Port</h2>
-              </figure>
-            </a>
-          
+          <!-- one card by column -->
+          <a class="simpleCard" href="#">
+            <figure class="card-image">
+              <img
+                src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="port_marseille"
+              />
+              <h2>Vieux Port</h2>
+            </figure>
+          </a>
+          <!-- two cards by column -->
           <div class="doubleCard">
             <a href="#">
               <figure class="largeCard">
@@ -348,17 +354,17 @@
               </figure>
             </a>
           </div>
-          
-            <a class="simpleCard" href="#">
-              <figure class="card-image">
-                <img
-                  src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="parc_national"
-                />
-                <h2>Parc National des Calanques</h2>
-              </figure>
-            </a>
-          
+          <!-- one card by column -->
+          <a class="simpleCard" href="#">
+            <figure class="card-image">
+              <img
+                src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="parc_national"
+              />
+              <h2>Parc National des Calanques</h2>
+            </figure>
+          </a>
+          <!-- two cards by column -->
           <div class="doubleCard">
             <a href="#">
               <figure class="mediumCard">

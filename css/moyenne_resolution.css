@@ -3,92 +3,90 @@
 /* Regles CSS pour les tablettes *****/
 
 /*************************************************************************************************/
-    
-    main {
-      min-width: 750px;
-      margin: auto;
-      padding: 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    /**********************************************/
-    /*********************HEADER*******************/
-    /**********************************************/
-    header nav {
-      width: 100%;
-    }
-    header ul {
-      justify-content: center;
-      width: 100%;
-      padding-inline-start: none;
-      margin: none;
-      margin-block-start: 0%;
-      margin-block-end: 0%;
-      padding-inline-start: 0px;
-    }
-    header li {
-      min-width: 200px;
-      padding: 0px;
-      margin: 0px;
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid #f2f2f2;
-    }
-    header li:hover {
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid #0065fc;
-    }
-    header li a {
-      padding-bottom: 10px;
-      padding-top: 20px;
-    }
-    #logo {
-      justify-content: center;
-    }
-    #logo img {
-      margin-left: 100px;
-    }
-    header {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .filters {
-      flex-wrap: wrap;
-    }
-    .number {
-      flex-direction: column-reverse;
-    }
-    
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .popular figure {
-      width: 250px;
-    }
-    .popular {
-      max-width: 990px;
-      border-radius: 0px;
-    }
-    .popular img {
-      width: 105px;
-    }
-    .activity {
-      flex-wrap: wrap;
-      justify-content: space-around;
-      max-width: 800px;
-    }
-    .activity div {
-      margin-bottom: 15px;
-    }
-   
-    
-    footer nav {
-      max-width: 750px;
-    }
-  
+
+main {
+  min-width: 750px;
+  margin: auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/**********************************************/
+/*********************HEADER*******************/
+/**********************************************/
+header nav {
+  width: 100%;
+}
+header ul {
+  justify-content: center;
+  width: 100%;
+  padding-inline-start: none;
+  margin: none;
+  margin-block-start: 0%;
+  margin-block-end: 0%;
+  padding-inline-start: 0px;
+}
+header li {
+  min-width: 200px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #f2f2f2;
+}
+header li:hover {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #0065fc;
+}
+header li a {
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+#logo {
+  justify-content: center;
+}
+#logo img {
+  margin-left: 100px;
+}
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.filters {
+  flex-wrap: wrap;
+}
+.number {
+  flex-direction: column-reverse;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.popular figure {
+  width: 250px;
+}
+.popular {
+  max-width: 990px;
+  border-radius: 0px;
+}
+.popular img {
+  width: 105px;
+}
+.activity {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+}
+.activity div {
+  margin-bottom: 15px;
+}
+
+footer nav {
+  max-width: 750px;
+}

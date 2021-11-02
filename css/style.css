@@ -102,7 +102,6 @@ header li:hover {
 
 /********************************************************/
 .baseLine {
- 
   margin: 0 20px;
   display: flex;
   flex-direction: column;
@@ -144,7 +143,6 @@ header li:hover {
   display: flex;
   font-weight: bold;
   margin: 20px 0;
-  
 }
 
 /********************************************************/
@@ -313,7 +311,7 @@ figure span i {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.accomodation article:hover{
+.accomodation article:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .accomodation figure img {
@@ -345,13 +343,12 @@ figure span i {
 /******************SECTION LES PLUS POPULAIRES******************************/
 
 /***************************************************************************/
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 80%;
-
 }
 .popular {
   flex: 1;
@@ -370,7 +367,7 @@ figure span i {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-color: white;
 }
-.popular a:hover{
+.popular a:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .popular figure {
@@ -411,7 +408,6 @@ figure span i {
 
 .popularTitle i {
   font-size: 30px;
- 
 }
 
 .popular h1 {
@@ -493,14 +489,12 @@ figure span i {
   background-color: transparent;
 }
 
-
-
 .largeCard {
   height: 250px;
   width: 300px;
   box-shadow: 0px 0px 10px #d8d7d7;
 }
-.largeCard:hover{
+.largeCard:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .largeCard img {
@@ -515,7 +509,7 @@ figure span i {
   width: 300px;
   box-shadow: 0px 0px 10px #d8d7d7;
 }
-.smallCard:hover{
+.smallCard:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .smallCard img {
@@ -530,7 +524,7 @@ figure span i {
   width: 300px;
   box-shadow: 0px 0px 10px #d8d7d7;
 }
-.mediumCard:hover{
+.mediumCard:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .mediumCard img {
@@ -577,6 +571,3 @@ footer h2 {
   margin-bottom: 10px;
   margin-left: 0px;
 }
-
-
-
