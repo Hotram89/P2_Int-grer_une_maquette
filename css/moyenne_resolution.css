@@ -59,7 +59,7 @@ header {
 .filters {
   flex-wrap: wrap;
 }
-.number {
+.rooms {
   flex-direction: column-reverse;
 }
 

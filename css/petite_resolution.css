@@ -57,11 +57,11 @@ main {
 .baseLine {
   flex: 1;
 }
-.number {
+.rooms {
   justify-content: center;
   align-items: center;
 }
-.number section {
+.rooms section {
   border-radius: 0px;
   margin: 0px;
   max-height: 3000px;
