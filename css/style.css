@@ -196,22 +196,21 @@ header li:hover {
 }
 
 input[type="button"] {
-  background-color: white;
+  background-color: transparent;
   border: none;
   font-weight: bold;
   font-family: "Raleway";
   font-size: 18px;
   margin-right: 10px;
   margin-left: 10px;
+  color: unset;
 }
 
-input[type="button"]:hover {
-  background-color: #0065fc;
-  color: white;
-}
 
 .filters li:hover {
   background-color: #0065fc;
+  color: white;
+  border: solid white 3px;
 }
 
 /**************************/
