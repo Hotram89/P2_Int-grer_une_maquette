@@ -469,7 +469,7 @@ header li:hover {
 
 .searchButton {
   background-color: #0065fc;
-  color: cornsilk;
+  color: white;
   min-width: 130px;
   height: 50px;
   border-radius: 0 10px 10px 0;
@@ -555,8 +555,7 @@ input[type="button"] {
 
 
 .filters li:hover {
-  background-color: #0065fc;
-  color: white;
+  background-color: #deebff;
 
 }
 
@@ -579,7 +578,7 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  height: 30px;
   width: 30px;
   color: #0065fc;
   border: solid #f2f2f2 2px;
