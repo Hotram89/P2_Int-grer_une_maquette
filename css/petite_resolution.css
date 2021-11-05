@@ -195,6 +195,7 @@ main {
 }
 footer nav {
   flex-direction: column;
+
   gap: 0px;
   padding-left: 20px;
 }
