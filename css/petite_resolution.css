@@ -4,24 +4,10 @@
 
 /*************************************************************************************************/
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 /**********************************************/
-/*******************Filtres********************/
+/*************Bouton RECHERCHE*****************/
 /**********************************************/
-header {
-  margin: unset;
-}
-main {
-  margin: auto;
-}
-
-/**********************************************/
-/*******************Filtres********************/
-/**********************************************/
-.searchButton {
+.searchLocationButtonText {
   display: none;
 }
 .searchLocation {
@@ -29,7 +15,7 @@ main {
   flex: 1;
   align-self: center;
 }
-.searchLocation span {
+.searchLocationButtonIcon {
   display: flex;
   background-color: #0065fc;
   color: cornsilk;
@@ -41,161 +27,89 @@ main {
   justify-content: center;
 }
 /**********************************************/
+/*******************Filtres********************/
+/**********************************************/
+.filters {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filtersButtons {
+  gap: 12px;
+}
+.filtersTitle {
+  margin-bottom: 18px;
+}
+/**********************************************/
 /*******************SECTION********************/
 /**********************************************/
-main {
-  min-width: 400px;
-
+.accomodation {
   padding: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.info {
-  max-width: 350px;
-}
-.baseLine {
-  flex: 1;
-}
-.rooms {
-  justify-content: center;
-  align-items: center;
+.popular {
+  padding: 30px 10px;
 }
 .rooms section {
   border-radius: 0px;
-  margin: 0px;
-  max-height: 3000px;
-}
-.popular {
-  min-width: 400px;
-  border-radius: 0px;
-  justify-content: center;
-}
-
-.popular a {
-  margin-bottom: 15px;
-}
-.popular figure {
-  min-width: 350px;
-}
-.popularTitle {
-  margin: 10px 25px;
-}
-.popularTitle h1 {
-  margin-left: 0px;
-}
-.popular img {
-  width: 150px;
 }
 /******************************************************/
 /**************section hebergements********************/
 /******************************************************/
 .accomodation {
-  padding: 0px;
-  margin: 0px;
   background-color: transparent;
-  overflow: unset;
-  height: 1000px;
-}
-.accomodation h1 {
-  margin: 0 30px;
-}
-.moreInfo {
-  margin: 0 30px;
-}
-.accomodation div {
-  justify-content: center;
-}
-.accomodation section {
-  justify-content: center;
-}
-.accomodation article {
-  width: 350px;
-  height: 200px;
-}
-.accomodation figure {
-  width: 100%;
-  height: 100%;
-}
-.accomodation figure img {
   width: 100%;
 }
-.accomodation p {
-  margin: 0px;
+.accomodation .grid {
+  gap: 10px;
+}
+.accomodation .card {
+  width: 100%;
+}
+.accomodation .cardImage {
+  aspect-ratio: 16 / 5;
+}
+.accomodation .cardImage img {
+  aspect-ratio: 3 / 1;
+}
+/******************************************************/
+/*******************section popular********************/
+/******************************************************/
+.popular {
+  width: 100%;
+  border-radius: 0px;
 }
 .container {
   flex-direction: column;
-}
-.activity a {
-  height: 200px;
-}
-.activity img {
-  height: 200px;
-}
-.simpleCard {
-  height: 200px;
-  width: 350px;
-  margin-bottom: 20px;
-}
-.card-image {
-  height: 150px;
-  width: 350px;
-}
-.simpleCard img {
-  width: 100%;
-  height: 100%;
-}
-.simpleCard figure {
-  margin-bottom: 10px;
-}
-.doubleCard {
-  flex-direction: column;
-  width: 350px;
-}
-.doubleCard a {
-  margin-bottom: 20px;
-}
-.largeCard {
-  height: 200px;
-  width: 350px;
-}
-.largeCard img {
-  width: 350px;
-  height: 150px;
-}
-.smallCard {
-  height: 200px;
-  width: 350px;
-}
-.smallCard img {
-  width: 350px;
-  height: 150px;
-}
-.mediumCard {
-  height: 200px;
-  width: 350px;
-}
-
-.mediumCard img {
-  width: 350px;
-  height: 150px;
+  gap: 10px;
 }
 /******************************************************/
-/**************section Activites********************/
+/****************section Activites******************** /
 /******************************************************/
 .whiteBoard {
   align-items: center;
 }
-.activity {
+.activityGrid {
   flex-direction: column;
-  max-height: 2000px;
+  height: 100%;
 }
-.filters li {
-  padding-right: 0px;
+.simpleCard {
+  width: 100%;
 }
+.doubleCard {
+  width: 100%;
+}
+.activityCard {
+  aspect-ratio: 2/1;
+}
+.activityCard img {
+  aspect-ratio: 2/1;
+}
+.smallCard {
+  max-height: 100%;
+}
+/******************************************************/
+/*********************Pied de Page******************** /
+/******************************************************/
 footer nav {
   flex-direction: column;
-
-  gap: 0px;
   padding-left: 20px;
 }
