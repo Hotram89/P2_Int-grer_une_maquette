@@ -6,6 +6,7 @@
 main {
   display: flex;
   flex-direction: column;
+  
 }
 /**********************************************/
 /*********************HEADER*******************/
@@ -15,6 +16,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: unset;
+  padding-top: 30px;
 }
 .headerNavList {
   width: 100%;
@@ -29,6 +31,7 @@ main {
   border-bottom-color: #0065fc;
   border-top-color: white;
 }
+
 /**********************************************/
 /*********************SECTIONS*****************/
 /**********************************************/
@@ -37,6 +40,17 @@ main {
 }
 .popular {
   width: 100%;
+  flex-direction: row;
+}
+.container{
+  flex-direction: row;
+}
+.container .card{
+ 
+  max-width: 220px;
+}
+.popular .cardHeader{
+  margin: 0px;
 }
 .accomodation {
   width: 100%;

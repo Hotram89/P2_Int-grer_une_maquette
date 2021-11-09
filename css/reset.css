@@ -5,7 +5,7 @@
 
  *, *::before, *::after {
     box-sizing: border-box;
-    min-width: 0;
+    
 }
 html {
     -webkit-tap-highlight-color: transparent;

@@ -135,6 +135,7 @@ main {
   font-style: 18px;
   font-weight: bold;
   padding: 0 28px 0 0;
+
 }
 
 .filtersButtons {
@@ -302,7 +303,12 @@ main {
 
   flex-direction: column;
 }
-
+.popular .cardHeader{
+  margin: 10px 10px 5px 5px;
+}
+.container h2 {
+  padding: 6px 0px;
+}
 .container .cardImage {
   min-width: 40%;
   max-width: 40%;
