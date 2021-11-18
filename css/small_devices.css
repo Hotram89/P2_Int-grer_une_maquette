@@ -1,0 +1,114 @@
+/*************************************************************************************************/
+
+/* Regles CSS pour les mobiles *****/
+
+/*************************************************************************************************/
+
+/**********************************************/
+/*************Bouton RECHERCHE*****************/
+/**********************************************/
+.searchLocationButtonText {
+  display: none;
+}
+.searchLocation {
+  margin-top: 15px;
+  flex: 1;
+  align-self: center;
+}
+.searchLocationButtonIcon {
+  display: flex;
+  background-color: #0065fc;
+  color: cornsilk;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin-left: -15px;
+  justify-content: center;
+}
+/**********************************************/
+/*******************Filtres********************/
+/**********************************************/
+.filters {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filtersButtons {
+  gap: 12px;
+}
+.filtersTitle {
+  margin-bottom: 18px;
+}
+/**********************************************/
+/*******************SECTION********************/
+/**********************************************/
+.accomodation {
+  padding: 0px;
+}
+.popular {
+  padding: 30px 10px;
+}
+.rooms section {
+  border-radius: 0px;
+}
+.container {
+  gap: 10px;
+}
+/******************************************************/
+/**************section hebergements********************/
+/******************************************************/
+.accomodation {
+  background-color: transparent;
+  width: 100%;
+}
+.accomodation .card {
+  width: 100%;
+}
+.accomodation .cardImage {
+  aspect-ratio: 16 / 5;
+}
+.accomodation .cardImage img {
+  aspect-ratio: 3 / 1;
+}
+/******************************************************/
+/*******************section popular********************/
+/******************************************************/
+.popular {
+  width: 100%;
+  border-radius: 0px;
+}
+.popular .container {
+  flex-direction: column;
+}
+.popular .container .card {
+  max-width: 100%;
+}
+/******************************************************/
+/****************section Activites******************** /
+/******************************************************/
+.activityGrid {
+  flex-direction: column;
+  height: 100%;
+}
+.simpleCard {
+  width: 100%;
+}
+.doubleCard {
+  width: 100%;
+}
+.activityCard {
+  aspect-ratio: 2/1;
+}
+.activityCard img {
+  aspect-ratio: 2/1;
+}
+.smallCard {
+  max-height: 100%;
+}
+/******************************************************/
+/*********************Pied de Page******************** /
+/******************************************************/
+footer nav {
+  flex-direction: column;
+  padding-left: 20px;
+}
