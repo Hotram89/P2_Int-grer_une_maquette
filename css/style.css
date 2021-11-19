@@ -168,7 +168,6 @@ main {
 
 .filtersButtonText {
   padding: 0 18px;
-  font-style: 18px;
   font-weight: bold;
 }
 
@@ -400,7 +399,7 @@ main {
   object-fit: cover;
 }
 .mediumCard {
-  min-height: calc((445px- 30px) / 2);
+  min-height: calc((445px - 30px) / 2);
 }
 .mediumCard img {
   object-fit: cover;
@@ -409,7 +408,7 @@ main {
   overflow: hidden;
 }
 .largeCard {
-  min-height: calc(100% -145px);
+  min-height: calc(100% - 145px);
 }
 .largeCard img {
   max-height: 205px;
