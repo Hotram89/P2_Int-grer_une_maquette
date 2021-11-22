@@ -393,13 +393,12 @@ main {
 .doubleCard img {
   overflow: hidden;
 }
-.smallCard {
-  max-height: 115px;
-}
+
 .smallCard img {
-  height: 100px;
+  max-height: 100px;
   width: 100%;
   object-fit: cover;
+  
 }
 .mediumCard {
   min-height: calc((445px - 30px) / 2);
