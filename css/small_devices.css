@@ -42,14 +42,18 @@
 /**********************************************/
 /*******************SECTION********************/
 /**********************************************/
+
 .accomodation {
-  padding: 0px;
+  padding: 0px 20px;
 }
 .popular {
-  padding: 30px 10px;
+  padding: 40px 20px;
 }
 .rooms section {
   border-radius: 0px;
+}
+.activity {
+  padding: 0 20px;
 }
 .container {
   gap: 10px;
@@ -111,4 +115,10 @@
 footer nav {
   flex-direction: column;
   padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 50px;
+}
+footer ul {
+  margin: 0px;
+  margin-bottom: 30px;
 }

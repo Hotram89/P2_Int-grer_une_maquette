@@ -6,8 +6,10 @@
 main {
   display: flex;
   flex-direction: column;
-  
+  margin: 0px;
+  padding: 0px;
 }
+
 /**********************************************/
 /*********************HEADER*******************/
 /**********************************************/
@@ -16,12 +18,16 @@ main {
   justify-content: center;
   align-items: center;
   margin: unset;
+  padding: 0px;
   padding-top: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
+
 header nav {
   width: 100%;
 }
-header li{
+header li {
   width: 50%;
 }
 .headerNavList {
@@ -30,7 +36,7 @@ header li{
 .headerNavLink {
   padding: 40px 0px 20px 0px;
   border-top-color: transparent;
-  border-bottom: 3px solid transparent;
+  border-bottom: 3px solid #f2f2f2;
   transition: border-bottom-color 0.2s linear;
 }
 .headerNavLink:hover {
@@ -38,9 +44,17 @@ header li{
   border-top-color: white;
 }
 
+.searchLocation {
+  justify-content: center;
+}
 /**********************************************/
 /*********************SECTIONS*****************/
 /**********************************************/
+.baseLine {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
 .rooms {
   flex-direction: column-reverse;
 }
@@ -48,18 +62,19 @@ header li{
   width: 100%;
   flex-direction: row;
 }
-.popular .container{
+.popular .container {
   flex-direction: row;
 }
-.accomodation .container{
-
+.popular .card {
+  min-width: 100px;
+}
+.accomodation .container {
   justify-content: center;
 }
-.popular .container .card{
- 
+.popular .container .card {
   max-width: 220px;
 }
-.popular .cardHeader{
+.popular .cardHeader {
   margin: 0px;
 }
 .accomodation {

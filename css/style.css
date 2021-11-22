@@ -85,7 +85,6 @@ main {
 
 .searchLocation {
   display: flex;
-  max-width: 440px;
   height: 50px;
   margin-bottom: 32px;
 }
@@ -95,17 +94,16 @@ main {
   align-items: center;
   width: 50px;
   height: 50px;
+
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
 }
 
 .searchLocationInput {
-  padding: 0 16px;
   border: 1px solid #f2f2f2;
-  font-size: 18px;
   font-weight: bold;
+  padding-left: 20px;
 }
-
 .searchLocationButton {
   padding: 0 18px;
   border-radius: 0 10px 10px 0;
@@ -134,7 +132,6 @@ main {
   font-size: 18px;
   font-weight: bold;
   padding: 0 28px 0 0;
-
 }
 
 .filtersButtons {
@@ -215,7 +212,7 @@ main {
   border-radius: 20px;
   background-color: #f2f2f2;
 }
-.container{
+.container {
   gap: 30px;
   display: flex;
 }
@@ -233,6 +230,7 @@ main {
   border: 4px solid #ffffff;
   overflow: hidden;
   cursor: pointer;
+
   box-shadow: 0 3px 6px rgb(0 0 0 / 3%), 0 3px 6px rgb(0 0 0 / 6%);
 }
 .cardHeader h2 {
@@ -264,6 +262,7 @@ main {
 }
 .accomodation .container {
   flex-wrap: wrap;
+  justify-content: center;
 }
 .moreInfo {
   display: block;
@@ -273,6 +272,7 @@ main {
 .accomodation .card {
   width: calc((100% - 30px * 2) / 3);
   flex-direction: column;
+  min-width: 180px;
 }
 .accomodation .cardImage {
   aspect-ratio: 16 / 8;
@@ -300,11 +300,14 @@ main {
 .popular .container {
   flex-direction: column;
 }
-.popular .cardHeader{
+.popular .cardHeader {
   margin: 10px 10px 5px 5px;
 }
 .container h2 {
   padding: 6px 0px;
+}
+.popular .card {
+  min-width: 200px;
 }
 .popular .container .cardImage {
   min-width: 40%;
@@ -407,9 +410,7 @@ main {
   max-height: 152px;
   overflow: hidden;
 }
-.largeCard {
-  min-height: calc(100% - 145px);
-}
+
 .largeCard img {
   max-height: 205px;
   width: 100%;
