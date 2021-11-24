@@ -83,3 +83,6 @@ header li {
 .accomodation .card {
   width: calc((100% - 60px) / 2);
 }
+.mediumCard {
+  height: 47%;
+}

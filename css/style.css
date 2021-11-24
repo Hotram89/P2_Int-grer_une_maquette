@@ -342,10 +342,10 @@ main {
   display: flex;
   height: 445px;
   gap: 30px;
+  
 }
 .activityCard {
   border-radius: 20px;
-
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -367,9 +367,11 @@ main {
 /********************Card a 1 image***********************/
 
 /*********************************************************/
-.simpleCard {
-  display: flex;
+.simpleCard{
   width: 25%;
+}
+.simpleCard .activityCard{
+  height: 100%;
 }
 .simpleCard .activityCard img {
   height: 100%;
@@ -382,23 +384,46 @@ main {
 
 /*********************************************************/
 .doubleCard {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  width: 25%;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 10%;
+  border: #0065fc solid 1px;
 }
 .doubleCard .activityCard {
   width: 100%;
+  border: #0065fc solid 1px;
 }
 .doubleCard img {
   overflow: hidden;
 }
 
-.smallCard img {
-  max-height: 100px;
+/********************Large Card**********************/
+
+.largeCard{
+  height: 53%;
+}
+.largeCard .activityCard{
+  height: 100%;
+}
+
+.largeCard .activityCardImage img{
+  height: 100%;
   width: 100%;
   object-fit: cover;
-  
+}
+/********************Small Card**********************/
+.smallCard{
+  height: 37%;
+}
+.smallCard .activityCard{
+  height: 100%;
+}
+.smallCard .activityCardImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .mediumCard {
   min-height: calc((445px - 30px) / 2);
@@ -410,11 +435,7 @@ main {
   overflow: hidden;
 }
 
-.largeCard img {
-  max-height: 205px;
-  width: 100%;
-  object-fit: cover;
-}
+
 
 /****************************************************************/
 

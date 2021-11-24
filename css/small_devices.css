@@ -86,32 +86,48 @@
 }
 .popular .container .card {
   max-width: 100%;
+  
 }
 /******************************************************/
 /****************section Activites******************** /
 /******************************************************/
+
 .activityGrid {
   flex-direction: column;
+  
   height: 100%;
 }
 .simpleCard {
   width: 100%;
 }
+.simpleCard .activityCard{
+  width: 100%;
+}
+
+/********************Large Card**********************/
+
 .doubleCard {
   width: 100%;
+  gap :25px;
 }
 .activityCard {
   aspect-ratio: 2/1;
+  max-height: 200px;
+  width: 100%;
+  background-color: violet;
 }
+.largeCard {
+  width: 100%;
+}
+
 .activityCard img {
   aspect-ratio: 2/1;
 }
-.smallCard {
-  max-height: 100%;
-}
+
 .smallCard img{
   max-height: 200px;
 }
+
 /******************************************************/
 /*********************Pied de Page******************** /
 /******************************************************/
