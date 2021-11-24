@@ -389,11 +389,10 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 10%;
-  border: #0065fc solid 1px;
 }
 .doubleCard .activityCard {
   width: 100%;
-  border: #0065fc solid 1px;
+ 
 }
 .doubleCard img {
   overflow: hidden;
